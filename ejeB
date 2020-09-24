@@ -1,0 +1,19 @@
+nuevaSalida = 0
+s = t = f = 0
+vector = input()
+vector=vector.split(" ")
+s = int(vector[0])
+t = int(vector[1])
+f = int(vector[2])
+if s == 24:
+    s = 0
+if t == 24:
+    t = 0
+if ((s>=0) & (s<=24) & (t>=0) & (t<=24) & (f>=-12) & (f<=12)):
+    Salida = s + t + f
+    if Salida>=0 and Salida<24:
+        print(Salida)
+    elif Salida>=24:
+        print(Salida-24)
+    elif Salida < 0:
+        print(24+Salida)
